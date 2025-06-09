@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
+    'chat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'daphne'
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'websocket.wsgi.application'
-ASGI_APPLICATION = "myproject.asgi.application"
+ASGI_APPLICATION = "websocket.asgi.application"
 
 
 # Database
